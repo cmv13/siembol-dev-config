@@ -1,0 +1,29 @@
+{
+  "tags": [
+    {
+      "tag_name": "detection_source",
+      "tag_value": "siembol_alerts"
+    }
+  ],
+  "rules_protection": {
+    "max_per_hour": 30,
+    "max_per_day": 100
+  },
+  "rules_version": 1,
+  "rules": [
+    {
+      "rule_name": "alert3",
+      "rule_author": "siembol",
+      "rule_version": 1,
+      "source_type": "*",
+      "matchers": [
+        {
+          "matcher_type": "REGEX_MATCH",
+          "is_negated": false,
+          "field": "e",
+          "data": "e"
+        }
+      ]
+    }
+  ]
+}
