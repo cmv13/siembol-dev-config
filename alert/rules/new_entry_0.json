@@ -1,0 +1,14 @@
+{
+  "rule_name": "new_entry_0",
+  "rule_author": "siembol",
+  "rule_version": 1,
+  "source_type": "*",
+  "matchers": [
+    {
+      "matcher_type": "REGEX_MATCH",
+      "is_negated": false,
+      "field": "KEY",
+      "data": "value"
+    }
+  ]
+}
