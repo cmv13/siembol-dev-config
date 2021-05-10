@@ -1,7 +1,7 @@
 {
   "rule_name": "alert3",
   "rule_author": "siembol",
-  "rule_version": 3,
+  "rule_version": 4,
   "source_type": "*",
   "matchers": [
     {
@@ -9,19 +9,16 @@
       "is_negated": false,
       "field": "e",
       "data": "e"
-    },
-    {
-      "matcher_type": "IS_IN_SET",
-      "is_negated": false,
-      "field": "d",
-      "case_insensitive": false,
-      "data": "d"
     }
   ],
   "tags": [
     {
       "tag_name": "test",
       "tag_value": "test2"
+    },
+    {
+      "tag_name": "t",
+      "tag_value": "t"
     }
   ],
   "rule_protection": {
