@@ -1,0 +1,18 @@
+{
+  "test_case_name": "test_2_",
+  "version": 1,
+  "author": "siembol",
+  "config_name": "alert1",
+  "test_specification": {
+    "event": {}
+  },
+  "assertions": [
+    {
+      "assertion_type": "path_and_value_matches",
+      "json_path": "r",
+      "expected_pattern": "r",
+      "negated_pattern": false,
+      "active": true
+    }
+  ]
+}
