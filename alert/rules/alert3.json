@@ -1,7 +1,8 @@
 {
   "rule_name": "alert3",
   "rule_author": "siembol",
-  "rule_version": 4,
+  "rule_version": 5,
+  "rule_description": "test",
   "source_type": "*",
   "matchers": [
     {
@@ -18,7 +19,7 @@
     },
     {
       "tag_name": "t",
-      "tag_value": "t"
+      "tag_value": "t2"
     }
   ],
   "rule_protection": {
