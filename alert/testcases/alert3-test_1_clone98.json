@@ -1,0 +1,18 @@
+{
+  "test_case_name": "test_1_clone98",
+  "version": 1,
+  "author": "siembol",
+  "config_name": "alert3",
+  "test_specification": {
+    "event": {}
+  },
+  "assertions": [
+    {
+      "assertion_type": "path_and_value_matches",
+      "json_path": "key",
+      "expected_pattern": "value",
+      "negated_pattern": false,
+      "active": true
+    }
+  ]
+}
