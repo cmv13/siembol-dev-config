@@ -1,0 +1,14 @@
+{
+  "rule_name": "alert3_clone6",
+  "rule_author": "siembol",
+  "rule_version": 1,
+  "source_type": "*",
+  "matchers": [
+    {
+      "matcher_type": "REGEX_MATCH",
+      "is_negated": false,
+      "field": "e",
+      "data": "e"
+    }
+  ]
+}
