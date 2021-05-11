@@ -1,21 +1,34 @@
 {
   "rule_name": "new_entry_0",
   "rule_author": "siembol",
-  "rule_version": 1,
+  "rule_version": 2,
   "evaluators": [
     {
-      "evaluator_type": "alert_throttling",
+      "evaluator_type": "matching",
       "evaluator_attributes": {
-        "suppressing_key": "test",
-        "time_unit_type": "minutes",
-        "suppression_time": 10
+        "evaluation_result": "match",
+        "matchers": [
+          {
+            "matcher_type": "REGEX_MATCH",
+            "is_negated": false,
+            "field": "key",
+            "data": "value"
+          }
+        ]
+      }
+    },
+    {
+      "evaluator_type": "sleep",
+      "evaluator_attributes": {
+        "time_unit_type": "seconds",
+        "sleeping_time": 10
       }
     },
     {
       "evaluator_type": "markdown_table_formatter",
       "evaluator_attributes": {
-        "field_name": "test",
-        "table_name": "test",
+        "field_name": "test2",
+        "table_name": "test2",
         "fields_column_name": "Field Name",
         "values_column_name": "Field Value",
         "field_filter": {
@@ -23,6 +36,14 @@
             ".*"
           ]
         }
+      }
+    },
+    {
+      "evaluator_type": "alert_throttling",
+      "evaluator_attributes": {
+        "suppressing_key": "e",
+        "time_unit_type": "minutes",
+        "suppression_time": 1
       }
     }
   ]
