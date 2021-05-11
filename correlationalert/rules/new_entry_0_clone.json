@@ -1,0 +1,17 @@
+{
+  "rule_name": "new_entry_0_clone",
+  "rule_author": "siembol",
+  "rule_version": 1,
+  "correlation_attributes": {
+    "time_unit": "minutes",
+    "time_window": 2,
+    "time_computation_type": "processing_time",
+    "alerts": [
+      {
+        "alert": "1",
+        "threshold": 1,
+        "mandatory": false
+      }
+    ]
+  }
+}
